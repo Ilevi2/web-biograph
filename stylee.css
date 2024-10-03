@@ -1,0 +1,129 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #d65db1;
+            color: black;
+            text-align: center;
+            padding: 0%;
+        }
+
+        nav {
+            position: sticky;
+            top: 0px;            
+        }
+        nav a {
+            font-size: 20px;
+            color: white;
+        }
+        nav a:hover{
+            font-weight: bold;
+            color: #333;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            list-style: none;
+            font-size: medium;
+        }
+
+
+        main {
+            display: flex;
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #333;
+        }
+
+        article {
+            flex: 20%;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin-right: 20px;
+        }
+
+        .utama {
+            margin-left: 10px;
+            flex: 100%;
+            padding: 20px;
+            background-color: #ff9671;
+            border-radius: 20px;
+        }
+        aside {
+            background-color: #333;
+            border-radius: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .isi {
+            display: flex;
+            flex-flow: column;
+            background-color: #333;
+        }
+
+        #Experience {
+            margin: 10px 0px;
+            background-color: #845ec2;
+            border-radius: 20px;
+        }
+
+        #About {
+            margin: 10px 0px;
+            background-color: #ff6f91;
+            border-radius: 20px;
+            display: flex;
+        }
+
+        #Skills {
+            margin: 10px 0px;
+            background-color: #ffc75f;
+            border-radius: 20px;
+        }
+
+        th, td {
+            text-align: left;
+            border-bottom: #333;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            color: #333;
+        }
+
+        #About img {
+            width: 30%;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 1000px){
+            main {
+                flex-flow: column nowrap;
+            }
+            nav ul {
+                justify-content: center;
+            }
+            aside {
+                align-self: stretch;
+            } 
+        }
+        
